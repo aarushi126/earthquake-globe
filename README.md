@@ -1,86 +1,50 @@
 # 🌍 Earthquake Globe
 
-A real-time **3D visualization** of global earthquake activity using data from the **USGS Earthquake API**, built with **React + Three.js (Globe.gl)**.  
-The app automatically updates and allows users to explore recent earthquakes with interactive globe markers, magnitude filters, and dynamic data refresh.
+An interactive **3D globe visualization** displaying real-time earthquake data using **React**, **Three.js**, and the **USGS Earthquake API**.  
+Users can explore global earthquake patterns, magnitudes, and locations in a beautiful, animated experience.
 
 ---
 
-## 🌐 Live Demo
-
-🔗 **View Deployed App:** https://aarushi126.github.io/earthquake-globe/
-
----
-
-## 🎯 Project Overview
-
-This project was created as part of the **Aganitha Full Stack Developer Take-Home Challenge (2024–25)**.  
-It demonstrates:
-- Real-time data fetching from a public API (USGS)
-- Data visualization on a 3D interactive globe
-- Responsive and user-friendly UI
-- LLM-assisted development workflow using **ChatGPT (GPT-5)**
+## 🚀 Demo
+Live Site: https://aarushi126.github.io/earthquake-globe/
 
 ---
 
-## 🧠 How I Worked with AI
+## 🧠 Features
 
-Throughout the project, I collaborated with ChatGPT to:
-- Interpret the problem statement  
-- Choose a suitable API (USGS Earthquake Feed)  
-- Design React hooks for data fetching  
-- Debug rendering issues in `useEarthquakeData.js`  
-- Write clean, modular, and commented code  
-- Draft the README and video script  
-
-🔗 **ChatGPT conversation link:** [Insert your ChatGPT link here]
+- 🌐 **3D Globe Visualization** — Powered by Three.js and react-globe.gl.  
+- 🌋 **Live Earthquake Data** — Fetches real-time earthquake data from the USGS API.  
+- 📊 **Magnitude-based Coloring** — Earthquakes visualized by magnitude intensity.  
+- 🕒 **Time-based Animation** — Older earthquakes fade over time.  
+- ⚡ **Responsive and Interactive** — Pan, zoom, and hover for details.  
+- ☁️ **Automatic Build and Deploy** — Deployed automatically via GitHub Actions to GitHub Pages.
 
 ---
 
-## 🚀 Features
+## 🛠️ Tech Stack
 
-- 🌐 **Interactive 3D Globe** built using **Three.js** and **react-globe.gl**
-- ⚡ **Real-time data** from the [USGS Earthquake API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
-- 🎨 **Magnitude-based color coding & size scaling**
-  - 🟢 Green → Minor quakes  
-  - 🟡 Yellow → Moderate quakes  
-  - 🟠 Orange → Strong quakes  
-  - 🔴 Red → Major quakes
-- 🕓 **Time range filters:** Last hour, day, week, or month
-- 📏 **Magnitude filters:** Focus on quakes above certain magnitudes
-- 📊 **Popup info panels** showing location, magnitude, depth, and time
-- 💻 **Responsive design** for desktop and mobile
+| Category | Tools |
+|-----------|--------|
+| **Frontend Framework** | React (Create React App) |
+| **3D Visualization** | Three.js, react-globe.gl |
+| **Data Source** | USGS Earthquake API |
+| **Styling** | Tailwind CSS |
+| **Deployment** | GitHub Pages via GitHub Actions |
+| **Linting** | ESLint |
 
 ---
 
-## 🧠 Tech Stack
+## 🌋 Data Source
 
-- **Frontend:** React (Create React App)
-- **3D Visualization:** Three.js, react-globe.gl
-- **Animations:** React Spring
-- **Data Fetching:** Axios
-- **Color Scaling:** D3-scale
-- **Deployment:** GitHub Pages
+Data is fetched from the official **USGS Earthquake API**:
 
----
+🔗 [https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson)
 
-## 🛰️ API Used
-
-**USGS Earthquake API**
-- Base URL: `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/`
-- Formats: GeoJSON (e.g., `all_day.geojson`, `all_week.geojson`)
-- No authentication required
----
----
-
-## 💡 Learnings & Reflections
-
-This project helped me practice:
-
-- Efficient API-driven visualization  
-- React hooks and cleanup mechanisms  
-- Handling async data flow and intervals  
-- Communicating with LLMs for iterative debugging  
-- Deployment workflow with GitHub Pages  
+Each earthquake record contains:
+- Magnitude  
+- Coordinates (latitude, longitude, depth)  
+- Location description  
+- Timestamp  
 
 ---
 
@@ -108,3 +72,6 @@ npm start
 
 # Build for production
 npm run build
+
+
+
