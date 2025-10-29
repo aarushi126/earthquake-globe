@@ -7,7 +7,7 @@ The app automatically updates and allows users to explore recent earthquakes wit
 
 ## 🌐 Live Demo
 
-🔗 **View Deployed App:** [https://aarushinagpure.github.io/earthquake-globe/](https://aarushinagpure.github.io/earthquake-globe/)
+🔗 **View Deployed App:** https://aarushi126.github.io/earthquake-globe/
 
 ---
 
